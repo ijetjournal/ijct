@@ -175,7 +175,7 @@
 					}
 				</script><br>-->
 
-<a href="http://www.ijctjournal.org/CallForPaper.htm" title="IJCT Call For Paper"><font face="arial" font size="3" color="red" ><u><b>Call for Paper - February 2017 </b></u></a> </font>
+<a href="http://www.ijctjournal.org/CallForPaper.htm" title="IJCT Call For Paper"><font face="arial" font size="3" color="red" ><u><b><span class="yearClass"></span></b></u></a> </font>
 
 <font ="arial"font size="4" color="green"> </font>
 <br><br><center><strong><u><a href="http://www.researcherid.com/rid/M-1365-2016" target="_blank"><font face="arial" font size="3" color="red" >Thomson Reuters ResearcherID :<font face="arial" font size="4" color="00000" > M-1365-2016 </a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"><strong><u><a href="http://www.cosmosimpactfactor.com/page/journals_details/651.html" target="_blank"><font face="arial" font size="3" color="00000" >Cosmos Impact Factor :<font face="arial" font size="4" color="red" > 3.356 </a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"></center><br><strong><u><a href="http://oaji.net/journal-detail.html?number=1948" target="_blank"><font face="arial" font size="3" color="00000" >OAJI Impact Factor :<font face="arial" font size="4" color="red" > 0.201 </a></u></strong></font><img src="http://www.ijctjournal.org/images/newbut.gif" alt="ijct"></center>
@@ -230,7 +230,7 @@ _gaq.push(['_addIgnoredOrganic','http://ijctjournal.org/']);
           <tr>
             <td width="700" height="137" align="left" valign="top">
 
-                    <p class="style6">IJCT has introduced scholarly peer review of Five days. Scholary peer review is the process of subjecting as authors’ scholarly work, research or ideas to the scrutiny of others who are experts in the same field, before a paper describing this work is published in a journal. The work may be accepted, considered acceptable with revisions, or rejected. Peer review requires a community of experts in a given field, who are qualified and able to perform review.</p>
+                    <p class="style6">IJCT has introduced scholarly peer review of Five days. Scholary peer review is the process of subjecting as authorsï¿½ scholarly work, research or ideas to the scrutiny of others who are experts in the same field, before a paper describing this work is published in a journal. The work may be accepted, considered acceptable with revisions, or rejected. Peer review requires a community of experts in a given field, who are qualified and able to perform review.</p>
                     <ol start="1" type="1">
 
                         <li class="style6 style9 style11">1.Each papers will be reviewed by at least one expert.</li>
@@ -243,7 +243,7 @@ _gaq.push(['_addIgnoredOrganic','http://ijctjournal.org/']);
                         <li class="style6 style9 style11">8.If decision is a revision, Author revises manuscript and submits revision.</li>
                         <li class="style6 style9 style11">9.Editor makes new decision.</li>
                         <li class="style6 style9 style11">10. Author contacted with decision</li>
-                        <li class="style6 style9 style11">11. Steps 8–10 repeated as necessary until Editor makes final decision.</li>
+                        <li class="style6 style9 style11">11. Steps 8ï¿½10 repeated as necessary until Editor makes final decision.</li>
                         <li class="style6 style9 style11">12. When paper is accepted, manuscript enters production system..</li>
 
 
@@ -508,5 +508,57 @@ _gaq.push(['_addIgnoredOrganic','http://ijctjournal.org/']);
 <img src="http://www.ijctjournal.org/images/DRJI1.png" width="140" height="70" alt='DRJI Indexed Journal'/><br/>
 </a></br>
 </div>-->
+<script type="text/javascript">
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+    
+    var yearClass=document.getElementsByClassName("yearClass");
+    for(var j = 0, length1 = yearClass.length; j < length1; j++) {
+    	yearClass[j].innerHTML = month[d.getMonth()]+"  -  "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
+
+</script>
+
 </body>
 </html>
