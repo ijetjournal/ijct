@@ -10,7 +10,7 @@
 	content="IJCT,International Journal of Computer and Techniques,Best Online Journals,engineering journals, scientific Research journals, engineering Science  journal, engineering research journals,Engineering Application online journal, electronic journal, Engineering journal, scientific journal, Research journals, international journal of Engineering Application and Technology, IJETA,IJETT - Top indexed journal, High Impact, scopus indexed journal,ijca,ijcst,ijc, Computer Science Journal,Journal with Impact Factor,Best Electronic Journal,Best Management Journal,Best Engineering Journal,Best International Journal , computer science online journal, computer science electronic journal, computer journal, scientific journal, computer research journals " />
 <meta name="generator" content="IJCT JOURNAL" />
 <title>IJCT - Vol4 Issue 1</title>
-<link rel="icon" type="image/png"
+<link rel="icon" type="image/png" ></link>
 <a href="http://www.ijctjournal.org/images/myicon.jpg" />
 <link rel="stylesheet" type="text/css" href="http://www.ijctjournal.org/css/reveal.css">
 <script type="text/javascript" src="http://www.ijctjournal.org/js/jquery-1.6.min.js"></script>
@@ -855,5 +855,57 @@ sources, which includes twitter, Voter Register (VR) and SCR Smart Card Readers 
 									</tr>
 									<br>
 				</div>
+				<script type="text/javascript">
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+    
+    var yearClass=document.getElementsByClassName("yearClass");
+    for(var j = 0, length1 = yearClass.length; j < length1; j++) {
+    	yearClass[j].innerHTML = month[d.getMonth()]+"  -  "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
+
+</script>
+				
 </body>
 </html>
