@@ -10,7 +10,7 @@
 	content="IJCT,International Journal of Computer and Techniques,Best Online Journals,engineering journals, scientific Research journals, engineering Science  journal, engineering research journals,Engineering Application online journal, electronic journal, Engineering journal, scientific journal, Research journals, international journal of Engineering Application and Technology, IJETA,IJETT - Top indexed journal, High Impact, scopus indexed journal,ijca,ijcst,ijc, Computer Science Journal,Journal with Impact Factor,Best Electronic Journal,Best Management Journal,Best Engineering Journal,Best International Journal , computer science online journal, computer science electronic journal, computer journal, scientific journal, computer research journals " />
 <meta name="generator" content="IJCT JOURNAL" />
 <title>IJCT - Vol4 Issue 1</title>
-<link rel="icon" type="image/png"
+<link rel="icon" type="image/png" ></link>
 <a href="http://www.ijctjournal.org/images/myicon.jpg" />
 <link rel="stylesheet" type="text/css" href="http://www.ijctjournal.org/css/reveal.css">
 <script type="text/javascript" src="http://www.ijctjournal.org/js/jquery-1.6.min.js"></script>
@@ -641,6 +641,30 @@ sources, which includes twitter, Voter Register (VR) and SCR Smart Card Readers 
  <td><div align="center" class="style13"><br /><b>87-92</b></div> </span></span><span class="style27"><strong><spanclass="style11"> <br /></td>
 
 
+<tr class="style13" valign="top">
+<td height="58" td width="30">
+<div align="center" class="style16"><b>14</b></br></br></div></td>
+
+<td><span class="style28"> <span class="style55"><font face="arial" font color="brown"><b>Smart Voting System for Digital India</b></font></br> 
+<span class="style"><font face="arial" font align="left" size="">- <img src="http://www.ijetjournal.org/images/Author.png"alt="IJCT" title="IJCT">Apurva Nikam , Sonali Gupta , Apoorva Sakapal, Priyanka Yadav ,Prof. S. S. Damre</font></span></br></span></a>
+ <div id="content-dece">
+ <ul>
+<a href="#" class="big-link" data-reveal-id="27"><font face="arial" font size="2" font color="red" style="margin:-1px">[<strong> Abstract </strong> ]</font></a>
+<a href="#" class="big-link" data-reveal-id="28"><font face="arial" font size="2" font color="red" style="margin:-1px">[<strong>Cite</strong>
+]</font></a>
+ <a href="http://www.ijctjournal.org/Volume4/Issue1/IJCT-V4I1P14.pdf" target="balnk"><font face="arial" font size="2" font color="red" style="margin:-1px">[ <strong>PDF</strong> ]</font></a>
+
+<div id="27" class="reveal-modal">
+<font face="arial" font color="#0B0B61" font size="4"><strong>Abstract</strong></font><br><br><font face="arial" font size ="2">Technology is something without which an individual cannot exist now-a-days. We are surrounded by different technologies, among which one of the important part of one’s life is Android or Smart phones. Android is an open source operating system which provides an easy and efficient way to carry out our day-to-day routines. The usage of Android in present era made us to present our thought of developing an application which can provide easier way of casting votes. In this paper we are introducing several promising directions for developing an application for voting process using Android and Visual Cryptology. This paper presents how an individual can cast their votes using their own Android phones or smart phones maintaining confidentiality and availability.<br /><strong><br>Keyword: </strong>Android, E-voting system, Web services, One time password, QR Code, Visual cryptography.</font></p>
+
+<a class="close-reveal-modal">&#215;</a></div>
+<div id="28" class="reveal-modal">
+<img src="http://www.ijetjournal.org/images/IJET-citation.gif" alt="IJET" title="IJET citation" width="80"  height="10" >
+<strong></strong><p class="bord"><font face="arial" font size ="2">Apurva Nikam , Sonali Gupta , Apoorva Sakapal, Priyanka Yadav ,Prof. S. S. Damre<font face="arial" font color="red" font size ="2"><em><strong>"Smart Voting System for Digital India"</strong></em></font> Vol. 4 - Issue 1 ( Jan - Feb 2017),<strong> International Journal of Computer Techniques (IJCT) </strong>, ISSN: 2394 - 2231 , www.ijctjournal.org</font></p>
+<a class="close-reveal-modal">&#215;</a></div></div></td>
+
+ <td><div align="center" class="style13"><br /><b>93-96</b></div> </span></span><span class="style27"><strong><spanclass="style11"> <br /></td>
+
 
 <tr class="style13" valign="top">
 <td height="58">
@@ -855,5 +879,57 @@ sources, which includes twitter, Voter Register (VR) and SCR Smart Card Readers 
 									</tr>
 									<br>
 				</div>
+				<script type="text/javascript">
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+    
+    var yearClass=document.getElementsByClassName("yearClass");
+    for(var j = 0, length1 = yearClass.length; j < length1; j++) {
+    	yearClass[j].innerHTML = month[d.getMonth()]+"  -  "+year;
+    	//alert(lastDay.getDate() + " th " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
+
+</script>
+				
 </body>
 </html>
